@@ -92,209 +92,166 @@
 
         {{#region "columnizer" id="four-column" max_cols="4" max_auto_assets="0" dummy_content="T-1"}}
 
+          {{#asset "text" size="2"}}
+            {{{title}}}
+            {{{body}}}
+          {{/asset}}
 
-                {{#asset "text" size="2"}}
-                  {{{title}}}
-                  {{{body}}}
-                {{/asset}}
+          {{#asset "text" size="1"}}
+            {{{title}}}
+            {{{body}}}
+          {{/asset}}
 
-                {{#asset "text" size="1"}}
-                  {{{title}}}
-                  {{{body}}}
-                {{/asset}}
+          {{#asset "text" size="3"}}
+            {{{title}}}
+            {{{body}}}
+          {{/asset}}
 
-                {{#asset "text" size="3"}}
-                  {{{title}}}
-                  {{{body}}}
-                {{/asset}}
+          {{#asset "text" size="4"}}
+            {{{title}}}
+            {{{body}}}
+          {{/asset}}
 
-                {{#asset "text" size="4"}}
-                  {{{title}}}
-                  {{{body}}}
-                {{/asset}}
+          {{#asset "imagegroup" size="1"}}
+            {{{imageslider images width="940" height="450"}}}
+            {{{title}}}
+            {{{description}}}
+          {{/asset}}
 
-                {{#asset "imagegroup" size="1"}}
+          {{#asset "imagegroup" size="2"}}
+            {{{imageslider images width="440" height="353"}}}
+            {{{title}}}
+            {{{description}}}
+          {{/asset}}
 
+          {{#asset "imagegroup" size="3"}}
+            {{{imageslider images width="280" height="230"}}}
+            {{{title}}}
+            {{{description}}}
+          {{/asset}}
 
-                      {{{imageslider images width="940" height="450"}}}
+          {{#asset "imagegroup" size="4"}}
+            {{{imageslider images width="195" height="168"}}}
+            {{{title}}}
+            {{{description}}}
+          {{/asset}}
 
+          {{#asset "documentgroup" size="1"}}
+            {{{title}}}
+            <ul class="documents">
+              {{#documents}}
+                  <li>
+                      <a href="{{original_url}}">
+                          <div>
+                              {{title}}
+                          </div>
+                          <div>
+                              <p class="download">Download</p>
+                          </div>
+                      </a>
+                  </li>
+              {{/documents}}
+             </ul>
+            {{{description}}}
+          {{/asset}}
 
-                  {{{title}}}
-                  {{{description}}}
-                {{/asset}}
+          {{#asset "documentgroup" size="2"}}
+            {{{title}}}
+              <ul class="documents">
+                {{#documents}}
+                  <li>
+                      <a href="{{original_url}}">
+                          <div>
+                              {{title}}
+                          </div>
+                          <div>
+                              <p class="download">Download</p>
+                          </div>
+                      </a>
+                  </li>
+              {{/documents}}
+              </ul>
+            {{{description}}}
+          {{/asset}}
 
-                {{#asset "imagegroup" size="2"}}
+          {{#asset "documentgroup" size="3"}}
+            {{{title}}}
+            <ul class="documents">
+            {{#documents}}
+                  <li>
+                      <a href="{{original_url}}">
+                          <div>
+                              {{title}}
+                          </div>
+                          <div>
+                              <p class="download">Download</p>
+                          </div>
+                      </a>
+                  </li>
+              {{/documents}}
+            </ul>
+            {{{description}}}
+          {{/asset}}
 
-                              {{{imageslider images width="440" height="353"}}}
+          {{#asset "documentgroup" size="4"}}
+            {{{title}}}
+            <ul class="documents">
+                {{#documents}}
+                  <li>
+                      <a href="{{original_url}}">
+                          <div>
+                              {{title}}
+                          </div>
+                          <div>
+                              <p class="download">Download</p>
+                          </div>
+                      </a>
+                  </li>
+              {{/documents}}
+          </ul>
+            {{{description}}}
+          {{/asset}}
 
+          {{#asset "embedgroup" size="1" width="960"}}
+            {{{title}}}
+            <div class="content">
+              {{#embeds}}
+                <div class="embed">{{{html}}}</div>
+              {{/embeds}}
+            </div>
+            {{{description}}}
+          {{/asset}}
 
-                  {{{title}}}
-                  {{{description}}}
-                {{/asset}}
+          {{#asset "embedgroup" size="2" width="470"}}
+            {{{title}}}
+            <div class="content">
+              {{#embeds}}
+                <div class="embed">{{{html}}}</div>
+              {{/embeds}}
+            </div>
+            {{{description}}}
+          {{/asset}}
 
-                {{#asset "imagegroup" size="3"}}
+          {{#asset "embedgroup" size="3" width="307"}}
+            {{{title}}}
+            <div class="content">
+              {{#embeds}}
+                <div class="embed">{{{html}}}</div>
+              {{/embeds}}
+            </div>
+            {{{description}}}
+          {{/asset}}
 
-                          {{{imageslider images width="280" height="230"}}}
+          {{#asset "embedgroup" size="4" width="225"}}
+            {{{title}}}
+            <div class="content">
+              {{#embeds}}
+                <div class="embed">{{{html}}}</div>
+              {{/embeds}}
+            </div>
+            {{{description}}}
+          {{/asset}}
 
-                  {{{title}}}
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "imagegroup" size="4"}}
-
-
-                          {{{imageslider images width="195" height="168"}}}
-
-
-                  {{{title}}}
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "documentgroup" size="1"}}
-                  {{{title}}}
-                  
-                  <ul class="documents">
-                    {{#documents}}
-                        <li>
-                            <a href="{{original_url}}">
-                                <div>
-                                    {{title}}
-                                </div>
-                                <div>
-                                    <p class="download">Download</p>
-                                </div>
-                            </a>
-                        </li>
-                    {{/documents}}
-                   </ul>
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "documentgroup" size="2"}}
-                  {{{title}}}
-                  
-                    <ul class="documents">
-                      {{#documents}}
-                        <li>
-                            <a href="{{original_url}}">
-                                <div>
-                                    {{title}}
-                                </div>
-                                <div>
-                                    <p class="download">Download</p>
-                                </div>
-                            </a>
-                        </li>
-                    {{/documents}}
-                    </ul>
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "documentgroup" size="3"}}
-                  {{{title}}}
-                  
-                  <ul class="documents">
-                  {{#documents}}
-                        <li>
-                            <a href="{{original_url}}">
-                                <div>
-                                    {{title}}
-                                </div>
-                                <div>
-                                    <p class="download">Download</p>
-                                </div>
-                            </a>
-                        </li>
-                    {{/documents}}
-                  </ul>
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "documentgroup" size="4"}}
-                  {{{title}}}
-                  
-                  <ul class="documents">
-                      {{#documents}}
-                        <li>
-                            <a href="{{original_url}}">
-                                <div>
-                                    {{title}}
-                                </div>
-                                <div>
-                                    <p class="download">Download</p>
-                                </div>
-                            </a>
-                        </li>
-                    {{/documents}}
-                </ul>
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "embedgroup" size="1" width="960"}}
-                  {{{title}}}
-                  <div class="content">
-                    {{#embeds}}
-                      <div class="embed">{{{html}}}</div>
-                    {{/embeds}}
-                  </div>
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "embedgroup" size="2" width="470"}}
-                  {{{title}}}
-                  <div class="content">
-                    {{#embeds}}
-                      <div class="embed">{{{html}}}</div>
-                    {{/embeds}}
-                  </div>
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "embedgroup" size="3" width="307"}}
-                  {{{title}}}
-                  <div class="content">
-                    {{#embeds}}
-                      <div class="embed">{{{html}}}</div>
-                    {{/embeds}}
-                  </div>
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "embedgroup" size="4" width="225"}}
-                  {{{title}}}
-                  <div class="content">
-                    {{#embeds}}
-                      <div class="embed">{{{html}}}</div>
-                    {{/embeds}}
-                  </div>
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "videogroup" size="1"}}
-                  {{{videoplayer videos width="960" height="720" resolution="medium"}}}
-                  {{{title}}}
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "videogroup" size="2"}}
-                  {{{videoplayer videos width="470" height="353" resolution="medium"}}}
-                  {{{title}}}
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "videogroup" size="3"}}
-                  {{{videoplayer videos width="307" height="230" resolution="medium"}}}
-                  {{{title}}}
-                  {{{description}}}
-                {{/asset}}
-
-                {{#asset "videogroup" size="4"}}
-                  {{{videoplayer videos width="225" height="168" resolution="medium"}}}
-                  {{{title}}}
-                  {{{description}}}
-                {{/asset}}
-            
-            
         {{/region}}
 
         {{#region "columnizer" id="another-four-column" max_cols="4" max_auto_assets="0" dummy_content="T-1"}}
@@ -302,7 +259,6 @@
           {{#asset "text" size="1"}}
             {{{title}}}
             {{{body}}}
-            
           {{/asset}}
 
           {{#asset "text" size="2"}}
@@ -328,14 +284,11 @@
 
           {{#asset "imagegroup" size="2"}}
             {{{title}}}
-            
                 {{{imageslider images width="440" height="353"}}}
-                  
             {{{description}}}
           {{/asset}}
 
           {{#asset "imagegroup" size="3"}}
-            
             {{{title}}}
               {{{imageslider images width="285" height="230"}}}
             {{{description}}}
@@ -349,7 +302,6 @@
 
           {{#asset "documentgroup" size="1"}}
             {{{title}}}
-            
             <ul class="documents">
               {{#documents}}
                         <li>
@@ -369,7 +321,6 @@
 
           {{#asset "documentgroup" size="2"}}
             {{{title}}}
-            
             <ul class="documents">
               {{#documents}}
                         <li>
@@ -389,7 +340,6 @@
 
           {{#asset "documentgroup" size="3"}}
             {{{title}}}
-            
             <ul class="documents">
               {{#documents}}
                         <li>
@@ -409,7 +359,6 @@
 
           {{#asset "documentgroup" size="4"}}
             {{{title}}}
-            
             <ul class="documents">
               {{#documents}}
                         <li>
@@ -466,32 +415,6 @@
             </div>
             {{{description}}}
           {{/asset}}
-
-          {{#asset "videogroup" size="1"}}
-            {{{videoplayer videos width="960" height="720" resolution="medium"}}}
-            {{{title}}}
-            {{{description}}}
-          {{/asset}}
-
-          {{#asset "videogroup" size="2"}}
-            {{{videoplayer videos width="470" height="353" resolution="medium"}}}
-            {{{title}}}
-            {{{description}}}
-          {{/asset}}
-
-          {{#asset "videogroup" size="3"}}
-            {{{videoplayer videos width="307" height="230" resolution="medium"}}}
-            {{{title}}}
-            {{{description}}}
-          {{/asset}}
-
-          {{#asset "videogroup" size="4"}}
-            {{{videoplayer videos width="225" height="168" resolution="medium"}}}
-            {{{title}}}
-            {{{description}}}
-          {{/asset}}
-          
-          
 
       {{/region}}
       
