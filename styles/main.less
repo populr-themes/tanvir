@@ -59,8 +59,9 @@
 }
 
 // .description, .description p, .description li, .content, .content p, .content li, .body, .body p, .body li {
-.description, .content, .body, p, li {
+.description, .content, .body {
   .body-font();
+  p, li { .body-font(); }
 }
 
 /* END TYPOGRAPHY */
@@ -334,7 +335,7 @@ html{
 .documents li a div:first-of-type{
     width:30%;
     float: left;
-    padding:2px 3px 3px 30px;
+    padding:7px 3px 7px 30px;
     background: url("@{base-url}/images/document.png") top 0px left 0px no-repeat;
     color:#777777;
     text-shadow: none !important;
