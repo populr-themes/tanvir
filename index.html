@@ -38,12 +38,12 @@
     <div id="relative-bot">
         {{#region "columnizer" id="header-region" max_cols="1" max_auto_assets="0" dummy_content="T-1|I-1|I-2|D-1|D-3|E-1|E-2"}}
 
-            {{#asset "text" size="1"}}
-              <div class="NineSixty">
-                {{{title}}}
-                {{{body}}}
-              </div>
-            {{/asset}}
+          {{#asset "text" size="1"}}
+            <div class="NineSixty">
+              {{{title}}}
+              {{{body}}}
+            </div>
+          {{/asset}}
            
           {{#asset "imagegroup" size="1"}}
             <div class="imgContent-size-1">
@@ -56,52 +56,36 @@
           {{/asset}}
           
           {{#asset "documentgroup" size="1"}}
-          <div class="NineSixty">
-          
-                {{{title}}}
-                  
-                  <ul class="documents">
-                    {{#documents}}
-                        <li>
-                            <a href="{{original_url}}">
-                                <div>
-                                    {{title}}
-                                </div>
-                                <div>
-                                    <p class="download">Download</p>
-                                </div>
-                            </a>
-                        </li>
-                    {{/documents}}
-                   </ul>
-                {{{description}}}
-          {{/asset}}
-          </div>
-          
-            {{#asset "embedgroup" size="1" width="960"}}
             <div class="NineSixty">
-          
-            {{{title}}}
-            <div class="content">
-              {{#embeds}}
-                <div class="embed">{{{html}}}</div>
-              {{/embeds}}
+              {{{title}}}
+              <ul class="documents">
+                {{#documents}}
+                  <li>
+                    <a href="{{original_url}}">
+                      <div>
+                        {{title}}
+                      </div>
+                      <div>
+                        <p class="download">Download</p>
+                      </div>
+                    </a>
+                  </li>
+                {{/documents}}
+              </ul>
+              {{{description}}}
             </div>
-            {{{description}}}
-            </div>
-              
           {{/asset}}
           
-          
-          
-          {{#asset "videogroup" size="1"}}
-          <div class="NineSixty">
-          
-            {{{videoplayer videos width="400" height="300" resolution="medium"}}}
-            {{{title}}}
-            {{{description}}}
-            
-          </div>
+          {{#asset "embedgroup" size="1" width="960"}}
+            <div class="NineSixty">
+              {{{title}}}
+              <div class="content">
+                {{#embeds}}
+                  <div class="embed">{{{html}}}</div>
+                {{/embeds}}
+              </div>
+              {{{description}}}
+            </div>
           {{/asset}}
           
         {{/region}}
