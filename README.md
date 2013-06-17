@@ -1,4 +1,4 @@
-columnizer_base
+Tanvir
 ===================
 
-Simple columnizer theme to use as a starting point
+Theme developed by Tanvir Alam
