@@ -1,11 +1,11 @@
 @font-face {
         font-family: 'openSans';
-        src: url('@{base-url}/fonts/opensans-semibold-webfont.eot');
-        src: url('@{base-url}/fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-             url('@{base-url}/fonts/opensans-semibold-webfont.woff') format('woff'),
-             url('@{base-url}/fonts/opensans-semibold-webfont.eot') format('truetype'),
-             url('@{base-url}/fonts/opensans-semibold-webfont.svg#CreativeBlockBBBold') format('svg');
-        font-weight: normal;
+        src: url('@{base-url}/fonts/opensans-bold-webfont.eot');
+        src: url('@{base-url}/fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('@{base-url}/fonts/opensans-bold-webfont.woff') format('woff'),
+             url('@{base-url}/fonts/opensans-bold-webfont.eot') format('truetype'),
+             url('@{base-url}/fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+        font-weight: bold;
         font-style: normal;
 
 }
@@ -16,7 +16,7 @@
         src: url('@{base-url}/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
              url('@{base-url}/fonts/opensans-regular-webfont.woff') format('woff'),
              url('@{base-url}/fonts/opensans-regular-webfont.eot') format('truetype'),
-             url('@{base-url}/fonts/opensans-regular-webfont.svg#CreativeBlockBBBold') format('svg');
+             url('@{base-url}/fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
         font-weight: normal;
         font-style: normal;
 }
@@ -97,7 +97,9 @@ html{
   margin: 0 auto;
   color: @text-color;
   i, em { font-style: italic; }
-  b, strong { font-weight: 700; }
+  b, strong {
+    font-family: 'openSans', sans-serif;
+  }
   a {
     color: @link-color;
     text-decoration: none;
