@@ -38,23 +38,20 @@
     <div id="relative-bot">
         {{#region "columnizer" id="header-region" max_cols="1" max_auto_assets="0" dummy_content="T-1|I-1|I-2|D-1|D-3|E-1|E-2"}}
 
-           
             {{#asset "text" size="1"}}
-                <div class="NineSixty">
-            
-                    {{{title}}}
-                    {{{body}}}
-                </div>
-                
+              <div class="NineSixty">
+                {{{title}}}
+                {{{body}}}
+              </div>
             {{/asset}}
            
           {{#asset "imagegroup" size="1"}}
             <div class="imgContent-size-1">
               {{{imageslider images width="960" height="450"}}} 
-            
-            <div id="coolText">
+              <div id="coolText">
                 <div class="makeInlineBlock">{{{title}}}</div>
                 <div class="makeInlineBlock">{{{description}}}</div>
+              </div>
             </div>
           {{/asset}}
           
@@ -109,7 +106,7 @@
           
         {{/region}}
 
-        {{#region "columnizer" id="four-column" max_cols="4" max_auto_assets="0" dummy_content="T-1|T-1,T-1|T-1,T-1,T-1|T-1,T-1,T-1,T-1|I-1|I-2|I-1,I-2|I-1,I-2,I-3|I-1,I-2,I-3,I-4|D-1|D-3|D-1,D-3|D-1,D-2,D-3|D-1,D-2,D-3,D-4|E-1|E-2|E-1,E-2|E-1,E-2,E-3|E-1,E-2,E-3,E-4"}}
+        {{#region "columnizer" id="four-column" max_cols="4" max_auto_assets="0" dummy_content="T-1"}}
 
 
                 {{#asset "text" size="2"}}
@@ -316,7 +313,7 @@
             
         {{/region}}
 
-        {{#region "columnizer" id="another-four-column" max_cols="4" max_auto_assets="0" dummy_content="T-1|T-1,T-1|T-1,T-1,T-1|T-1,T-1,T-1,T-1|I-1|I-2|I-1,I-2|I-1,I-2,I-3|I-1,I-2,I-3,I-4|D-1|D-3|D-1,D-3|D-1,D-2,D-3|D-1,D-2,D-3,D-4|E-1|E-2|E-1,E-2|E-1,E-2,E-3|E-1,E-2,E-3,E-4"}}
+        {{#region "columnizer" id="another-four-column" max_cols="4" max_auto_assets="0" dummy_content="T-1"}}
 
           {{#asset "text" size="1"}}
             {{{title}}}
