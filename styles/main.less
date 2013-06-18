@@ -219,7 +219,7 @@ html{
                 margin-bottom:20px;
             }
             position:absolute;
-            text-align:center; 
+            // text-align: center; 
             top:350px;
             z-index:200;
             overflow:auto;
@@ -231,7 +231,7 @@ html{
 .allTextBox (@radius: 2px,@bg:@asset-title-bg,@shadow:#c2c2c2) {
     font-family:@text-font-family;
     padding:10px;
-    text-align: center;
+    // text-align: center;
     background-color: @bg;
     -moz-border-radius: @radius;
     -webkit-border-radius: @radius;
@@ -316,12 +316,12 @@ html{
 }
 .asset-type-documentgroup{
     h2{
-        text-align:left;
+        // text-align: left;
         padding-left:0px!important;
         margin-bottom:20px!important;
     }
     .description p{
-        text-align: left;
+        // text-align: left;
         padding-top:10px;
     }
 }
@@ -411,21 +411,21 @@ html{
         
     }
     
-    .asset-type-text h2,.asset-title{
+    .asset-type-text h2, .asset-title{
         font-size: 12px!important;
         color:#777777;
         padding:6px 6px 3px 0px;
         text-transform: uppercase;
         letter-spacing:1.5px;
-        text-align: left;
+        // text-align: left;
     }
     .asset-type-text h2{
 
     }
     
-    .description, .body,.body p {
+    .description, .body, p, li {
         font-size:12px!important;
-        text-align: left;
+        // text-align: left;
         color:#CCCCCC;
         padding: 3px 5px 5px 0px;
         margin-bottom:5px;
@@ -443,7 +443,7 @@ html{
         .asset-title{
             .allTextBox (2px,#26292B,#26292B);
             padding: 10px 10px 10px 15px;
-            text-align:left;
+            text-align: left;
         }
         .description{
             .allTextBox (2px,#26292B,#26292B);
@@ -451,7 +451,7 @@ html{
             
         }
         .description p{
-            text-align:left;
+            text-align: left;
             font-family: 'openSansRegular', Arial, sans-serif;
             font-size:12px!important;
         }
@@ -508,7 +508,7 @@ html{
 .content { margin: 10px 0; }
 
 // Text assets
-.asset-type-text.asset-size-1, .asset-type-documentgroup.asset-size-1 {
+.asset-size-1 {
   .asset-title {
     font-size: 36px;
     text-align: center;
@@ -612,7 +612,7 @@ to make your theme look really good on mobile devices. */
     position:relative!important;
     top:0!important;
     left:0!important;
-    text-align:left!important;
+    text-align: left!important;
     .makeInlineBlock{
         margin-bottom:3px!important;
         padding:0px 6px !important;
@@ -662,7 +662,7 @@ to make your theme look really good on mobile devices. */
     position:relative!important;
     top:0!important;
     left:0!important;
-    text-align:left!important;
+    text-align: left!important;
     .makeInlineBlock{
         margin-bottom:2px!important;
         padding:0px 5px !important;
